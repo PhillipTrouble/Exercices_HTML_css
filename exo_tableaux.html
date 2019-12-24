@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux HTML</title>
+
+    <style>
+/* styles pour la Liste  */
+
+    body {
+        background-color: goldenrod;
+    }
+        dt {
+            background-color: lightsalmon;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            font-style: italic;
+        }
+
+        /* Les styles pour les tableaux  */
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            font-size: 1.2em;
+            border-collapse:collapse;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        /* even impair, odd impair */
+        tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        caption {
+            /* border: 1px; solid blue; */
+            padding: 16px;
+            background-color: lightskyblue;
+            font-weight: bolder;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Des tableaux et une liste de définition</h1>
+    
+    <dl>
+        <dt>Vacances</dt>
+            <dd> Période de congés des personnes en activité.</dd>
+        <dt>Travail</dt>
+            <dd>Activité humaine organisée et utile. Ensemble de ces activités.</dd>
+        <dt>Téléphone</dt>
+
+    </dl>
+
+    <hr>
+
+    <h2>Des tableaux</h2>
+
+    <!-- table>tr*8>td*3{cellule} -->
+
+<table>
+    <caption>Les plus belles cie du monde</caption>
+    <tr>
+    
+        <th>Compagnie</th>
+        <th>Contact</th>
+        <th>Pays</th>
+        <th>Téléphone</th>
+
+    </tr>
+    <tr>
+        <td>Auchan</td>
+        <td>M<sup>me</sup> Auchan</td>
+        <td>France</td>
+        <td>60150480</td>
+        <td>
+            <ul>
+                <li>75 05 23</li>
+                <li>75 02 03</li>
+                
+            </ul>
+        </td>
+        
+    </tr>
+    <tr>
+        <td><a href="https://www.carrefour.fr/" title="le site de Carrefour" target="_blank">Carrefour</a></td>
+        <td>Mr Carrefour</td>
+        <td>France</td>
+        <td>60150480</td>
+        <td>60150480</td>
+    </tr>
+    <tr>
+        <td>Lidl</td>
+        <td>Mme Lidl</td>
+        <td>Allemagne</td>
+        <td>60150480</td>
+    </tr>
+    <tr>
+        <td>Wallmart</td>
+        <td>Mr Wall</td>
+        <td>Kainri</td>
+        <td>60150480</td>
+    </tr>
+    <tr>
+        <td>Leclerc</td>
+        <td>M. Le Couennec</td>
+        <td>Bretagne</td>
+        <td>60150480</td>
+    </tr>
+
+
+<hr>
+
+<table>
+    <!-- tr*2>td*3 -->
+    <!-- Colspan fusion de colonnes -->
+    <tr>
+        <th>Nom</th>
+        <th colspan="2">Courriel</th>
+        
+    </tr>
+    <h2>Un tableau avec fusion de cellule</h2>
+    <tr>
+        <td>Emeran Philippe</td>
+        <td>philip.trouble@lepoles.com</td>
+        <td>09.54.01.29.66</td>
+
+    <tr>
+        <td>Bob Marley</td>
+        <td>bob.marley@reggae.com</td>
+        <td>0593.89.17.63</td>
+
+    </tr>   
+
+</table>
+
+<hr>
+<h2>Un tableau avec fusion de rangées</h2>
+
+<!-- table>tr*3>td*2 -->
+    <table>
+            <tr>
+                <th>Nom</th>
+                <th>Kassav'</th>
+            </tr>
+            <tr>
+                <td>Téléphone</td>
+                <td>0590.99.20.57</td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>Téléphone</td>
+                <td>0590.99.20.57</td>
+            </tr>
+            <tr>
+                <td>0590.99.20.57</td>
+            </tr>
+
+    </table>
+
+
+
+
+</body>
+</html>
