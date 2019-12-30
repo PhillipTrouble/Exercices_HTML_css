@@ -10,8 +10,17 @@
         background-color: pink;
     }
 
-    .jaune {
-        background-color: yellow;        
+    /* les styles pour la section */
+    section {
+        width: 60%;
+        /* margin 0 et auto sont les déclarations racourcis cf. https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies auto permet de centrer la secion à droite et à gauche dans l'élément parent  */
+        margin: 0 auto;
+    }
+    /* Les styles pour Le tableau */
+
+    table {
+        /* border-collapse: collapse; */
+        background-color: white;
     }
 
     .blue {
@@ -24,75 +33,216 @@
 
 
     td {
-        width: 4em;
-        height: 4em;
+        width: 6em;
+        height: 6em;
+        border: 1px solid black;
+        /* border: 1px solid black;  */
     }
+
+    .jaune {
+        background-color: yellow; 
+    }
+
+    .gris {
+        background-color: grey;
+    }
+
+    .bleu {
+        background-color: blue;
+    }
+
+    .noir {
+        background-color: black;
+    }
+
+    #mignon {
+        /* width: 100%; */
+        margin: 0 auto;
+    }
+
+    
 </style>
 
 </head>
 <body>
-    <section>
+    <h1>Le mignon</h1>
+    <div id="mignon">
+        <!-- table>tr*21>td*14 -->
         <table>
             <tr>
+                <!-- 1er rangée -->
+                <!-- 14 td pour avoir 14 colonnes -->
+                <!-- la première cellule est fusionné avec les 13 suivantes 1 +13 = 14 donc colspan="14" -->
+                <!-- je dois donc supprimer les 13 td suivantes -->
+                <td colspan="14"></td>
+            </tr>
+            <tr>
+                <!-- 2nde rangée -->
+                <td colspan="4"></td>                
+                <td colspan="6" class="jaune"></td>                
+                <td colspan="4"></td>   
+            </tr>
+            <tr>
+                <!-- 3e rangée -->
+                <td colspan="3"></td>
+                <td colspan="3" class="jaune"></td>
+                <td colspan="2" class="gris"></td>
+                <td colspan="3" class="jaune"></td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+
+                <!--4e rangée -->
+            
+                <td colspan="2"></td>
+                <td colspan="3" class="jaune"></td>
+                <td class="gris"></td>
+                <td colspan="2"></td>
+                <td class="gris"></td>
+                <td colspan="3" class="jaune"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <!-- 5e rangée  -->
+                <td colspan="2"></td>
+                <td colspan="2" class="noir"></td>
+                <td class="gris"></td>
+                <td></td>
+                <td colspan="2" class="noir"></td>
+                <td></td>
+                <td colspan="2" class="noir"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <!-- 6e rangée -->
+                <td colspan="2"></td>
+                <td colspan="2" class="noir"></td>
+                <td class="gris"></td>
+                <td></td>
+                <td colspan="2" class="noir"></td>
+                <td></td>
+                <td class="gris"></td>
+                <td colspan="2" class="noir"></td>
+            </tr>
+            <tr>
+                <!-- 7e rangée -->
+                <td colspan="2"></td>
+                <td colspan="3" class="jaune"></td>
+                <td class="gris"></td>
+                <td colspan="2"></td>
+                <td class="gris"></td>
+                <td colspan="3" class="jaune"></td>
+                <td ></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <!-- 8e rangée -->
+                <td colspan="2"></td>
+                <td colspan="4" class="jaune"></td>
+                <td colspan="2" class="gris"></td>
+                <td colspan="4" class="jaune"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <!-- 9e rangée -->
+                <td colspan="2"></td>
+                <td colspan="2" class="jaune"></td>
+                <td class="noir"></td>
+                <td colspan="4" class="jaune"></td>
+                <td class="noir"></td>
+                <td colspan="2" class="jaune"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <!-- 10e rangée -->
+                <td colspan="2"></td>
+                <td colspan="3" class="jaune"></td>
+                <td colspan="4" class="noir"></td>
+                <td colspan="3" class="jaune"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <!--11e rangée-->
+                <td colspan="2"></td>
+                <td colspan="10" class="jaune"></td>
+                <td colspan="2"></td>
+               </tr>
+            <tr>
+                <!-- 12e rangée -->
+                <td colspan="2"></td>
+                <td class="bleu"></td>
+                <td colspan="8" class="jaune"></td>
+                <td class="bleu"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <!-- 13e rangée -->
+                <td colspan="2"></td>
                 <td class="jaune"></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                
-
-                
-
+                <td colspan="8" class="bleu"></td>
+                <td class="jaune"></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
-                <td class="vert"></td>
-                <td class="yellow"></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
+                <!-- 14e rangée -->
+                <td colspan="2"></td>
+                <td colspan="2" class="jaune"></td>
+                <td colspan="6" class="bleu"></td>
+                <td colspan="2" class="jaune"></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
+                <!-- 15e rangée -->
+                <td colspan="2"></td>
+                <td colspan="2" class="jaune"></td>
+                <td colspan="6" class="bleu"></td>
+                <td colspan="2" class="jaune"></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-
+                <!-- 16e rangée -->
+                <td colspan="2"></td>
+                <td class="jaune"></td>
+                <td colspan="8" class="bleu"></td>
+                <td class="jaune"></td>
+                <td colspan="2"></td>
             </tr>
-
-
+            <tr>
+                <!-- 17e rangée -->
+                <td></td>
+                <td colspan="2" class="noir"></td>
+                <td colspan="8" class="bleu"></td>
+                <td colspan="2" class="noir"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <!-- 18e rangée -->
+                <td colspan="2"></td>
+                <td class="noir"></td>
+                <td colspan="8" class="bleu"></td>
+                <td class="noir"></td>
+                <td colspan="2"></td>
+             </tr>
+            <tr>
+                <!-- 19e rangée -->
+                <td colspan="4"></td>
+                <td colspan="2" class="noir"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="noir"></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <!-- 20e rangée -->
+                <td colspan="3"></td>
+                <td colspan="3" class="noir"></td>
+                <td colspan="2"></td>
+                <td colspan="3" class="noir"></td>
+                <td colspan="3"></td>
+            </tr>
+            
         </table>
-    </section>
+        
+    </div>
     
 </body>
 </html>
